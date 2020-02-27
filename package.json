@@ -1,6 +1,9 @@
 {
   "name": "prismic-demo",
   "version": "2.0.0",
+  "engines": {
+    "node": "10.19.0"
+  },
   "scripts": {
     "start": "npm run build:css; node app.js",
     "dev": "npm run watch-css | nodemon app.js",
