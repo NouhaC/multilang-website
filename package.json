@@ -4,6 +4,7 @@
   "scripts": {
     "start": "npm run build:css; node app.js",
     "dev": "npm run watch-css | nodemon app.js",
+    "build": "npm run build:css",
     "prebuild:css": "node-sass ./assets/stylesheets/style.scss ./public/stylesheets/style.css",
     "prefix:css": "postcss ./public/stylesheets/style.css --use autoprefixer --output ./public/stylesheets/style.css",
     "build:css": "npm run prebuild:css; npm run prefix:css",
